@@ -1,0 +1,14 @@
+<h1>EDIT Class</h1>
+<%= form_for @class do |f| %>
+
+  <%= f.label :title %> <br>
+  <%= f.text_field :title %> <br>
+
+  <%= f.label :room_number%><br>
+  <%= f.text_field :room_number %><br>
+
+  <%= f.submit "Update School class" %>
+<% end %>
+
+
+<%= link_to 'all classes', school_classes_path%>
